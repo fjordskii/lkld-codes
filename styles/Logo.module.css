@@ -1,3 +1,38 @@
 .logo {
   font-family: 'OutrunFuture';
+  font-size: 6vw;
+  animation: float 6s ease-in-out infinite;
+}
+
+.logoFlexContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media only screen and (min-width: 1025px) {
+  .logoFlexContainer {
+    height: 90vh;
+  }
+}
+
+@keyframes float {
+  0% {
+    text-shadow: 0 50px 150px 0px rgba(0, 0, 0, 0.6);
+    transform: translatey(0px);
+  }
+  50% {
+    text-shadow: 0 250px 150px 0px rgba(0, 0, 0, 0.2);
+    transform: translatey(-20px);
+  }
+  100% {
+    text-shadow: 0 50px 150px 0px rgba(0, 0, 0, 0.6);
+    transform: translatey(0px);
+  }
+}
+
+.callOut {
+  width: 80vw;
+  text-align: center;
 }

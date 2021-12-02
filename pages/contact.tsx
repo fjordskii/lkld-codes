@@ -1,6 +1,8 @@
+import styles from '../styles/Layout.module.css';
+
 export default function Contact() {
   return (
-    <section>
+    <section className={styles.maxHeightFlexContainer}>
       <header>
         <h2>Contact</h2>
         <h1>Level 1 Heading</h1>

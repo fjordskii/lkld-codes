@@ -1,3 +1,4 @@
+import { FunctionComponent } from 'react';
 import styles from '../../styles/Layout.module.css';
 import { Footer } from './Footer';
 import { Navbar } from './Navbar';
@@ -6,7 +7,7 @@ interface ILayout {
   children: any;
 }
 
-export function Layout({ children }: ILayout) {
+export const Layout: FunctionComponent<ILayout> = ({ children }) => {
   return (
     <div className={styles.container}>
       <Navbar />
@@ -14,4 +15,4 @@ export function Layout({ children }: ILayout) {
       <Footer />
     </div>
   );
-}
+};

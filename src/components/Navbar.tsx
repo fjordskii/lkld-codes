@@ -1,5 +1,6 @@
 import { useRouter } from 'next/dist/client/router';
 import Link from 'next/link';
+import styles from '../../styles/Navbar.module.css';
 
 export function Navbar() {
   const router = useRouter();
@@ -7,7 +8,7 @@ export function Navbar() {
   const isActiveRoute = (route: string) => route === router.pathname;
 
   return (
-    <section>
+    <section className={styles.navbar}>
       <div className="terminal-nav">
         <div className="terminal-logo">
           <div className="logo terminal-prompt">

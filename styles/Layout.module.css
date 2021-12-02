@@ -1,13 +1,12 @@
 .container {
-  min-height: 100vh;
   position: relative;
+  min-height: calc(100vh - 40px);
 }
 
 .footer {
   position: absolute;
   bottom: 0;
   width: 100%;
-  margin-bottom: 2rem;
 }
 
 .flexContainer {
@@ -15,4 +14,28 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
+}
+
+.fullHeight {
+  height: 100vh;
+}
+
+.logoWrapper {
+  margin-top: 10rem;
+}
+
+.maxHeightFlexContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0 1rem;
+}
+
+/* DESKTOP ONLY */
+@media only screen and (min-width: 1025px) {
+  .maxHeightFlexContainer {
+    height: 90vh;
+    padding: 0 5rem;
+  }
 }
